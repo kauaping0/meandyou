@@ -1,0 +1,38 @@
+.heart {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 100px;
+  background: #7a297a;
+  animation: pulse 1s infinite alternate;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #7a297a;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  background: #7a297a;
+}
+
+.top {
+  top: 100px;
+}
+
+.left {
+  left: 100px;
+}
+
+@keyframes pulse {
+  0% {transform: scale(0.9)rotate(-135deg);}
+  100% {transform: scale(1.1)rotate(-135deg);}
+}
